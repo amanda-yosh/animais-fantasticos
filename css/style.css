@@ -136,6 +136,7 @@ body {
 .faq-lista dt {
     font-family: monospace;
     font-weight: bold;
+    font-size: 1rem;
     margin-top: 2rem;
     margin-bottom: .5rem;
     color: #e54;
