@@ -106,6 +106,10 @@ body {
     grid-column: 2;
 }
 
+.animais-lista li {
+    cursor: pointer;
+}
+
 /* estilizacao da barra de scroll - não funciona em todos os browsers */
 .animais-lista::-webkit-scrollbar {
     width: 18px;
@@ -223,5 +227,29 @@ body {
     }
     .copy {
         margin-bottom: 0;
+    }
+}
+
+ .js .js-tabcontent section {
+    display: none;
+}
+
+.js-tabcontent section.ativo {
+    display: block; /* caso necessário, usar o !important */
+    /* animation: show .5s forwards; sem o forwards a animação volta para o estado inicial (from) */
+    /* animation-name: show;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-duration: 1s; */
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
     }
 }
