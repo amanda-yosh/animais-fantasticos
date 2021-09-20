@@ -236,20 +236,16 @@ body {
 
 .js-tabcontent section.ativo {
     display: block; /* caso necessário, usar o !important */
-    /* animation: show .5s forwards; sem o forwards a animação volta para o estado inicial (from) */
-    /* animation-name: show;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
-    animation-duration: 1s; */
+    animation: show .5s forwards; /* sem o forwards a animação volta para o estado inicial (from) */
 }
 
 @keyframes show {
     from {
         opacity: 0;
-        transform: translate3d(-30px, 0, 0);
+        transform: translateX(-30px);
     }
     to {
-        opacity: 0;
-        transform: translate3d(0, 0, 0);
+        opacity: 1;
+        transform: translateX(0);
     }
 }
